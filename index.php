@@ -15,8 +15,8 @@ Watch this space...
 -->
 <html>
 <head>
-<link href="/style.css" rel="stylesheet" type="text/css" />
 <title>{code}</title>
+<link href="style.css" rel="stylesheet">
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -33,37 +33,37 @@ Watch this space...
 </head>
 <body>
 <h1>{code:2012}</h1>
-<section class="home" id="blurb">
-<p>Why come to <span class="code">{code}</span>?</p>
+<section id="blurb">
+<p>Why come to <b>{code}</b>?</p>
 <ol>
-		<li><span class="code">{code}</span> is a conference about designing and developing software.</li>
-		<li><span class="code">{code}</span> is focused on two things: mind-bending content and buzzing corridor conversations, and will have a schedule that accommodates both.</li>
-		<li>Every <span class="code">{code}</span> session will be technology focused, and all technologies are welcome.</li>
-		<li><span class="code">{code}</span> is a community event - it aims to be accessible and affordable for all.</li>
-		<li><span class="code">{code}</span> will be held in Auckland, New Zealand, sometime in Q1 2012.</li>
-		<li><span class="code">{code}</span> is the brainchild of a couple of code monkeys with an insatiable passion to learn more. We think there's nothing worse than developers using code they don't understand.</li>
+		<li><b>{code}</b> is a conference about designing and developing software.</li>
+		<li><b>{code}</b> is focused on two things: mind-bending content and buzzing corridor conversations, and will have a schedule that accommodates both.</li>
+		<li>Every <b>{code}</b> session will be technology focused, and all technologies are welcome.</li>
+		<li><b>{code}</b> is a community event - it aims to be accessible and affordable for all.</li>
+		<li><b>{code}</b> will be held in Auckland, New Zealand, sometime in Q1 2012.</li>
+		<li><b>{code}</b> is the brainchild of a couple of code monkeys with an insatiable passion to learn more. We think there's nothing worse than developers using code they don't understand.</li>
 </ol>
 </section>
-<section class="home" id="signup">
-<p><strong>Subscribe to get updates and information via email:</strong></p>
-<form id="signup" action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
+<section id="signup">
+<h1>Subscribe to get updates and information via email:</h1>
+<form id="signupform" action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
 	<ol>
 		<li><label for="email" id="address-label">Email Address</label>
 			<input type="text" name="email" id="email" />
 			<input type="submit" name="submit" value="Submit" class="btn" alt="Join" /></li>
-		<li><span id="response"><? require_once('inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
-		  </span></li>
+		<li><span id="response"><? require_once('inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></span></li>
 		<li><span id="no-spam">Entering your address will add you to our MailChimp email list. We promise not to spam you and will not sell your information to Rupert Murdoch.</span></li>
 	</ol>
 </form>      
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/mailing-list.js"></script>
 </section>
 
-<section class="home">
-//TODO: logo, rounded corners</br>
-//What can we say? We're developers not designers.
+<section>
+<ul class="comments">
+  <li>TODO: logo, rounded corners</li>
+  <li>What can we say? We're developers not designers.</li>
+</ul>
 </section>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/mailing-list.js"></script>
 </body>
 </html>
