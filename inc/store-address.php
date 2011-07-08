@@ -21,7 +21,7 @@ function storeAddress(){
 
 	require_once('MCAPI.class.php');
 	// grab an API Key from http://admin.mailchimp.com/account/api/
-	$api = new MCAPI('ea67b2d3bb431779b20ab23dbbc14dca-us2');
+	$api = new MCAPI('enter api key');
 	
 	// grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
 	// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
