@@ -9,6 +9,10 @@ h1 {
 	font-weight:bold;
 }
 
+section h1 {
+	font-size: inherit;
+}
+
 fieldset {
 	padding: 12px;
 	border-left: 50px solid #ddd;
@@ -18,18 +22,30 @@ fieldset {
 
 }
 
-span.code {
+b {
 	color: #2c2;
 	font-weight:bold;
 }
 
 section {
 	display:block;
-}
-
-section.home {
 	margin: 12px;
 	min-width: 800px;
+}
+
+ul.comments {
+	margin: 1em 0;
+	padding: 0;
+}
+
+ul.comments li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.comments li:before {
+	content: '// ';
 }
 
 ol {
@@ -39,9 +55,9 @@ ol {
 	border: 1px solid #ddd;
 }
 
-li {
-margin-left: 40px;
-padding: 6px;
+ol li {
+	margin-left: 40px;
+	padding: 6px;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 }
