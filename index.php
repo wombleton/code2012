@@ -49,8 +49,7 @@ Watch this space...
 <form id="signupform" action="<?=$_SERVER['PHP_SELF']; ?>" method="get">
 	<ol>
 		<li><label for="email" id="address-label">Email Address</label>
-			<input type="text" name="email" id="email" />
-			<input type="submit" name="submit" value="Submit" class="btn" alt="Join" /></li>
+			<input type="text" name="email" id="email" /><input type="submit" name="submit" value="Submit" class="btn" alt="Join" /></li>
 		<li><span id="response"><? require_once('inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></span></li>
 		<li><span id="no-spam">Entering your address will add you to our MailChimp email list. We promise not to spam you and will not sell your information to Rupert Murdoch.</span></li>
 	</ol>
@@ -59,7 +58,7 @@ Watch this space...
 
 <section>
 <ul class="comments">
-  <li>TODO: logo, rounded corners</li>
+  <li>TODO: logo</li>
   <li>What can we say? We're developers not designers.</li>
 </ul>
 </section>

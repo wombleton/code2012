@@ -1,12 +1,11 @@
 body {
-	font-family: monospace;
-	font-size: 16pt;
-
+  font-family: monospace;
+  font-size: 16pt;
 }
 
 h1 {
-	font-size:36pt;
-	font-weight:bold;
+  font-size: 36pt;
+  font-weight: bold;
 }
 
 section h1 {
@@ -14,67 +13,110 @@ section h1 {
 }
 
 fieldset {
-	padding: 12px;
-	border-left: 50px solid #ddd;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+  padding: 12px;
+  border-left: 50px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 b {
-	color: #2c2;
-	font-weight:bold;
+  color: #22cc22;
+  font-weight: bold;
 }
 
 section {
-	display:block;
-	margin: 12px;
-	min-width: 800px;
+  display: block;
+  margin: 12px;
+  min-width: 800px;
 }
 
 ul.comments {
-  margin:  1em 0;
+  margin: 1em 0;
 }
-
 ul.comments li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-ul.comments:before {
-  content: '//';
+ul.comments li:before {
+  content: "// ";
 }
 
 ol {
-	background: #ddd;
-	margin: 0px;
-	padding-left: 12px;
-	border: 1px solid #ddd;
+  background: #dddddd;
+  margin: 0px;
+  padding-left: 12px;
+  border: 1px solid #dddddd;
+  -moz-border-radius-topleft: 0.5em;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0.5em;
+  -webkit-border-radius: 0.5em 0 0 0.5em;
+  border-radius: 0.5em 0 0 0.5em;
 }
-
 ol li {
-margin-left: 40px;
-padding: 6px;
-	background: #fff;
-	border-bottom: 1px solid #ddd;
+  margin-left: 40px;
+  padding: 6px;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
 }
 
 #email {
-	font-family: monospace;
-	width: 300px;
-	font-size: 16pt;
+  font-family: monospace;
+  width: 300px;
+  font-size: 16pt;
+  border-left: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: none;
+  padding: 3px 0 1px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  vertical-align: middle;
 }
 
 #submit {
-	font-family: monospace;
-	font-size: 14pt;
+  font-family: monospace;
+  font-size: 14pt;
 }
 
 #no-spam {
-	font-size: 12pt;
+  font-size: 12pt;
 }
 
+#response {
+  color: #ff3300;
+  font-style: italic;
+  font-size: 12pt;
+  padding: 0.4em;
+}
 
-#response {color:#f30; font-style:italic; font-size:12pt; padding:.4em;}
-
+input.btn {
+  font-family: monospace;
+  font-size: 1.231em;
+  padding: 0 10px;
+  background-color: rgba(216, 216, 216, 0.8);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(216, 216, 216, 0.8)), to(rgba(184, 184, 184, 0.9)));
+  background-image: -moz-linear-gradient(rgba(184, 184, 184, 0.9) 0%, rgba(184, 184, 184, 0.9) 90%);
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+}
+input.btn:hover {
+  background-color: #555555;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#555555), to(#666666));
+  background-image: -moz-linear-gradient(#666666 0%, #666666 90%);
+  color: white;
+}
