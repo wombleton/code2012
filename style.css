@@ -1,0 +1,66 @@
+body {
+	font-family: monospace;
+	font-size: 16pt;
+
+}
+
+h1 {
+	font-size:36pt;
+	font-weight:bold;
+}
+
+fieldset {
+	padding: 12px;
+	border-left: 50px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+}
+
+span.code {
+	color: #2c2;
+	font-weight:bold;
+}
+
+section {
+	display:block;
+}
+
+section.home {
+	margin: 12px;
+	min-width: 800px;
+}
+
+ol {
+	background: #ddd;
+	margin: 0px;
+	padding-left: 12px;
+	border: 1px solid #ddd;
+}
+
+li {
+margin-left: 40px;
+padding: 6px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+#email {
+	font-family: monospace;
+	width: 300px;
+	font-size: 16pt;
+}
+
+#submit {
+	font-family: monospace;
+	font-size: 14pt;
+}
+
+#no-spam {
+	font-size: 12pt;
+}
+
+
+#response {color:#f30; font-style:italic; font-size:12pt; padding:.4em;}
+
